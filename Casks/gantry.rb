@@ -1,0 +1,13 @@
+cask "gantry" do
+  version "5.1.0"
+  sha256 "cf284888c15f3ce174df4f6fa4673781bc00fc7486e0e7b8cd6fb2574493f484"
+
+  url "https://github.com/pigeoonn/gantry/releases/download/v#{version}/gantry-v#{version}-macos-arm64.tar.gz"
+  name "Gantry"
+  desc "Mod, trainer and crash-hunting hub for games"
+  homepage "https://github.com/pigeoonn/gantry"
+
+  depends_on arch: :arm64
+
+  binary "gantry-v#{version}-macos-arm64/rig"
+end
